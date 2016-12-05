@@ -1,0 +1,7 @@
+baseurl = "https://amazingfly.github.io/bookshelf/"
+languageCode = "en-us"
+title = "Derek's New Hugo Site"
+
+[Params]
+  Author = "Shekhar Gulati"
+  disqusShortname = "hugo-2"
