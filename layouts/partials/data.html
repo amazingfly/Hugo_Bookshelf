@@ -1,0 +1,17 @@
+<div class="w3-container">
+    <div class="w3-row">
+        <div class="w3-col s12 w3-xlarge">
+            <!-- set a go template variable with the hugo variable-->
+            {{ $Title := .Title }}
+            {{ $Title }}
+        </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col s6">Price: </div>
+        <div class="w3-col s6 w3-large w3-text-green">${{ .Params.price }}</div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col s6 w3-small">sku: </div>
+        <div class="w3-col s6 w3-small">{{ .Params.sku }}</div>
+    </div>
+</div>
