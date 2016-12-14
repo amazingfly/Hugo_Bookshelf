@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     {{ .Hugo.Generator }}
+    
+    <!-- Import bolt call javascript -->
     <script src="{{ .Site.BaseURL }}/javascript/script.js"></script>
     <!--Load W3.CSS TODO remove bootstrap -->
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/w3.css">
@@ -20,7 +22,7 @@
     <meta property='og:title' content="{{ .Title }}">
     <meta property="og:type" content="website">
     {{ else }}
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <title >{{ .Title }} - {{ .Site.Title }}</title>
     <meta property='og:title' content="{{ .Title }} - {{ .Site.Title }}">
     <meta property="og:type" content="article">
     {{ end }}
@@ -32,10 +34,14 @@
   </head>
 
   <body>
-
-    <header class="site">
-      <div class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
+      <!-- id="banner" for getBanner(),  boltCall mobile/getHomeBanners-->
+    <header id="banner"class="site">
+        <div class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
     </header>
+        <script>
+        //add the home banner
+        getBanner();
+    </script>
 
     <div class="container site">
 
