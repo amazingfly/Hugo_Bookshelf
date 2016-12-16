@@ -1,9 +1,10 @@
-baseurl = "http://localhost:8181/"
+baseurl = "http://localhost:8888/view/public/"
 languageCode = "en-us"
 title = "Derek's New Hugo Site"
 
 [Params]
   Author = "Shekhar Gulati"
   disqusShortname = "hugo-2"
+  ImportURL = "http://localhost:8888/static/"
 
   
