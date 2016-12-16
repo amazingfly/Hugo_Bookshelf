@@ -1,4 +1,4 @@
-baseurl = "http://localhost:8888/view/public/"
+baseurl = "http://localhost:8888/"
 languageCode = "en-us"
 title = "Derek's New Hugo Site"
 
